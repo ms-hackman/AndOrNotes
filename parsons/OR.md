@@ -41,5 +41,5 @@ if(!haveKeys || !haveWallet){
 </code></pre>
 </div>
 
-[Previous](https://ms-hackman.github.io/AndOrNotes/)
+[Previous](./AND.html)
 <!-- [Next](./elseif.html) -->
