@@ -1,0 +1,37 @@
+let buttonW = 100;
+let buttonH = 50;
+let textH = 200;
+function setup() {
+  createCanvas(340, 350);
+}
+
+function draw() {
+  background(255);
+
+  rectMode(CORNER);
+  textAlign(CENTER, CENTER);
+  textSize(20);
+  
+  fill(0);
+  stroke(0);
+  text("My favourite colour is?", width/2, 100);
+
+  fill(3, 115, 252,180);
+  stroke(3, 52, 133);
+  rect(10,textH, buttonW, buttonH);
+  fill(3, 52, 133);
+  text("Blue", 10+(buttonW)/2, textH+(buttonH)/2);
+  
+  fill(134, 209, 96,180);
+  stroke(79, 125, 55);
+  rect(120,textH, buttonW, buttonH);
+  fill(79, 125, 55);
+  text("Green", 120+(buttonW)/2, textH+(buttonH)/2);
+
+  fill(252, 186, 3,200);
+  stroke(199, 134, 4);
+  rect(230,textH, buttonW, buttonH);
+  fill(199, 134, 4);
+  text("Orange", 230+(buttonW)/2, textH+(buttonH)/2);
+
+}
