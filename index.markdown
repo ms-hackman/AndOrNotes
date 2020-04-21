@@ -71,14 +71,14 @@ else{
 </code></pre>
 Note that we had to put the expression <code> age >=18</code> in brackets so that it would evalute BEFORE the NOT gate was applied. If you do not have the brackets, your code will not give you an error but your code will not behave the way you expect it to. It's best to wrap arithmetic boolean expressions like this in brackets before using the NOT operator.<br>
 
-Now, in this case, the first example is much more intuitive and easier to read. We would never advocate using the not code for these examples. But in some cases, code using the negative can be clearer or more intuitive for the reader. For example, imagine you had a butler robot who would pour you juice while you worked on your brilliant computer projects. You might program the robot with logic like this:
+Now, in this case, the code without the NOT gate is much more intuitive and easier to read. It doesn't make sense to use the NOT code in this case. But in some cases, code using the NOT operator can be clearer or more intuitive for the reader. For example, imagine you had a butler robot who would pour you juice while you worked on your brilliant computer projects. You might program the robot with logic like this:
 <pre><code>
 if(! isFull){
     pourJuice();
 }
-</pre><code>
+</pre></code>
     
-In this case, the negative makes intuitve sense. Using the not operator makes it clearer what the context for when to pour Juice is. All this is to say that you can often avoid using the NOT operator, but sometimes it makes more "sense" to use it. 
+In this case, the negative makes intuitve sense.  All this is to say that you can often avoid using the NOT operator, but sometimes it makes your logic clearer to the reader, and as we get to more complex logic, using ANDs and ORs, the NOT can become more important. 
 
 
-[Next](./parsons/OR.html)
+[Next](./parsons/AND.html)
