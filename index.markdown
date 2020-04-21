@@ -76,7 +76,7 @@ Now, in this case, the code without the NOT gate is much more intuitive and easi
 if(! isFull){
     pourJuice();
 }
-</pre></code>
+</code></pre>
     
 In this case, the negative makes intuitve sense.  All this is to say that you can often avoid using the NOT operator, but sometimes it makes your logic clearer to the reader, and as we get to more complex logic, using ANDs and ORs, the NOT can become more important. 
 
