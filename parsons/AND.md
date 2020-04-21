@@ -97,7 +97,7 @@ function mousePressed(){
 }
 </code></pre>
 
-## Example
+## Exercise
 <img src="../assets/exercise_button.jpg"><br>
 Write <code>function mousePressed()</code> so that when the user clicks on any of these buttons, it will print the colour name for that button to the console. Use the x,y coordinates provided in the image and assume you can use variables <code>buttonW</code> and <code>buttonH</code> for the button's width and height. <br>
 If you want to try coding it in the p5js editor, <a href="../assets/buttonExample.txt">here's some code </a> to get you started.
@@ -138,14 +138,7 @@ function mousePressed(){
 Both work! It's up to you what you prefer. 
 </div>
 
-## Example
-Write the mousePressed() function so that it prints the 
-<!-- Using Not gate -->
-Note that we can combine AND gates and NOT gates to make more interesting logic. For example, this code:
 
-<pre><code>
-if()
-</code></pre>
 
 [Previous](https://ms-hackman.github.io/AndOrNotes/)
 [Next](./OR.html)
