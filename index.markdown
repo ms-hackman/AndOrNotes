@@ -66,4 +66,4 @@ Note that we can always rewrite code that uses the AND operator with nested if s
 
 
 
-[Next](./parsons/or.html)
+[Next](./parsons/OR.html)
