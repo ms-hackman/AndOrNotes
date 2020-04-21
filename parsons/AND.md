@@ -98,20 +98,48 @@ function mousePressed(){
 </code></pre>
 
 ## Example
-Rewrite the "button clicked" code above to use the variables: <code> buttonX, buttonY, buttonW, buttonH</code> which represent the x and y coordinate of the top left corner, and the width and height of the button. 
+<img src="../assets/exercise_button.jpg">
+Write the <code>function mousePressed()</code> so that when the user clicks on each of these buttons, it will print the colour name to the console. Use the x,y coordinates provided in the image and assume you can use variables <code>buttonW</code> and <code>buttonH</code>. <br>
+If you want to try coding it in the p5js editor, <a href="../assets/buttonExample.txt"here's some code </a> to get you started.
 
-<button onClick="myFunction('buttonEx1')"> Show Solution </button>
+<button onClick="myFunction('buttons')"> Show Solution </button>
 
-<div id='buttonEx1' style="display:none;" >
+<div id='buttons' style="display:none;" >
+One solution is this:
+<pre><code>
+function mousePressed() {
+  if (mouseX >= 10 && mouseX <= (10 + buttonW) && mouseY >= 200 && mouseY <= (200 + buttonH)) {
+    console.log("Blue");
+  } else if (mouseX >= 120 && mouseX <= (120 + buttonW) && mouseY >= 200 && mouseY <= (200 + buttonH)) {
+    console.log("Green");
+  } else if (mouseX >= 230 && mouseX <= (230 + buttonW) && mouseY >= 200 && mouseY <= (200 + buttonH)) {
+    console.log("Orange");
+  }
+}
+</code></pre>  
+
+But notice that you have the same code <code> mouseY >= 200 && mouseY <= (200 + buttonH)</code> in all three if statements. You could avoid that redundancy with the following code:
 <pre><code>
 function mousePressed(){
-    if(mouseX > = buttonX && mouseX <= (buttonX + buttonW) && mouseY >= buttonY && mouseY <= (buttonY + buttonH)){
-        console.log("Button has been clicked!");
+  if(mouseY >= 200 && mouseY <= (200+buttonH)){
+    if(mouseX>=10 && mouseX <= (10+buttonW)){
+     console.log("Blue"); 
     }
+    else if(mouseX>=120 && mouseX <= (120+buttonW)){
+     console.log("Green"); 
+    }
+    else if(mouseX>=230 && mouseX <= (230+buttonW)){
+     console.log("Orange"); 
+    }
+  }
 }
 </code></pre>
+
+Both work! It's up to you what you prefer. 
 </div>
 
+## Example
+Write the mousePressed() function so that it prints the 
 <!-- Using Not gate -->
 Note that we can combine AND gates and NOT gates to make more interesting logic. For example, this code:
 
