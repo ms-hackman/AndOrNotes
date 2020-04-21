@@ -85,7 +85,7 @@ if(tookBio && tookChem && tookPhysics && tookCS){
 This code is read from left to right: it first checks if they took Bio and Chem. If this is false, it immediately stops and doesn't check anything else. If they did take Bio and Chem, it then checks to see if they took Physics. If they did not take physics, it immediately stops. If they did take Bio, Chem, AND Physics, it will finally check if they took CS to determine whether or not they should be declared a SCIENCE ROCKSTAR! 
 
 One common situation where we use && gates is when checking to see if a user has clicked on a rectangular object in our program. For example, consider the image of the following fake program:
-<img src="/assets/example_button.jpg">
+<img src="../assets/example_button.jpg">
 
 Note the x,y coordinates for the four corners of the button have been labelled. If we wanted to check if this button has been clicked we could use the following code:
 
