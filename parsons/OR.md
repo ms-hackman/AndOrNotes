@@ -115,7 +115,7 @@ else{
 Bleah. Look at all those if/else statements. What a mess to read! We could simplify this logic, by using the following AND and OR logic:
 
  <pre><code>
-if(haveBoots && (isSunny || haveRaincoat){
+if(haveBoots && (isSunny || haveRaincoat)){
     console.log("You can go hiking!");    
 }
 else{
@@ -126,7 +126,25 @@ else{
 That's much neater! One thing that is important to note is the brackets around our OR statement. Just like in math, where our operators have an ordering (remember:BEDMAS), our logical operators have an order. The order is: BRACKETS, NOT, AND, OR. I think of Nando's chicken to remember because it's N(ot)ANDO(r). What this means is if we don't put brackets in, our code would check <code> haveBoots && isSunny</code> first and then check <code> || haveRaincoat</code>. In this particular example, the behaviour is still the same, but it is something you need to be careful of. 
 
 ## Exercise
+You are working at a restaurant that offers discounts for children ages 3 to 10 and seniors ages 65 to 100. (No one knows why the boss excludes kids under 3 and people over 100, but everyone's too scared of her to ask). Write code that uses the variable <code> age</code> and at least one && and one || statment to print out "DISCOUNT!" if a person qualifies for the discount. 
 
+<button onClick="myFunction('discHint')"> Show Hint </button>
+
+<div id='discHint' style="display:none;" >
+There are two cases you care about: either you are a child OR you are a senior. 
+If someone is a child, their age is greater than 3 AND their age is less than 10. 
+</div>
+
+
+<button onClick="myFunction('discounts')"> Show Solution </button>
+
+<div id='discounts' style="display:none;" >
+<pre><code>
+if( ( age>=3 && age<=10) ||(age>=65 && age <= 100)){
+    console.log("DISCOUNT!");
+}
+</code></pre>
+</div>
 
 
 [Previous](./AND.html)
