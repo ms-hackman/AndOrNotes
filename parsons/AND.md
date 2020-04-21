@@ -61,8 +61,63 @@ The <code>&&</code> operator takes two boolean expressions: one to its left and 
 Note that we can always rewrite code that uses the AND operator with nested if statements. But the AND operator code is shorter, neater, and easier to read. 
 
 ## Exercise
+Imagine there is a special scholarship for CS 10 students whose average is over 80%. Using the variable <code> grade </code> (which stores the student's average grade) and the boolean variable <code>tookCS10</code>, write code that uses the && operator to print out the message "Elligible for scholarship" if a student is elligible. 
 
+<button onClick="myFunction('scholarshipex')"> Show Solution </button>
 
+<div id='scholarshipex' style="display:none;" >
+<pre><code>
+if(grade > 80 && tookCS10){
+    console.log("Elligible for scholarship!");
+}
+</code></pre>
+</div>
+
+## Using more than one AND 
+
+We can "chain" together boolean expressions using multiple AND oprators. For example, say we wanted to call someone a SCIENCE ROCKSTAR if they took all four Sciences (bio, chem, physics and COMPUTER SCIENCE :D :D :D ), we could use the following logic:
+<pre><code>
+if(tookBio && tookChem && tookPhysics && tookCS){
+    console.log("You are a SCIENCE ROCKSTAR!");
+}
+</code></pre>
+
+This code is read from left to right: it first checks if they took Bio and Chem. If this is false, it immediately stops and doesn't check anything else. If they did take Bio and Chem, it then checks to see if they took Physics. If they did not take physics, it immediately stops. If they did take Bio, Chem, AND Physics, it will finally check if they took CS to determine whether or not they should be declared a SCIENCE ROCKSTAR! 
+
+One common situation where we use && gates is when checking to see if a user has clicked on a rectangular object in our program. For example, consider the image of the following fake program:
+<img src="assets/example_button.jpg">
+
+Note the x,y coordinates for the four corners of the button have been labelled. If we wanted to check if this button has been clicked we could use the following code:
+
+<pre><code>
+function mousePressed(){
+    if(mouseX > = 70 && mouseX <= 270 && mouseY >= 100 && mouseY <= 150){
+        console.log("Button has been clicked!");
+    }
+}
+</code></pre>
+
+## Example
+Rewrite the "button clicked" code above to use the variables: <code> buttonX, buttonY, buttonW, buttonH</code> which represent the x and y coordinate of the top left corner, and the width and height of the button. 
+
+<button onClick="myFunction('buttonEx1')"> Show Solution </button>
+
+<div id='buttonEx1' style="display:none;" >
+<pre><code>
+function mousePressed(){
+    if(mouseX > = buttonX && mouseX <= (buttonX + buttonW) && mouseY >= buttonY && mouseY <= (buttonY + buttonH)){
+        console.log("Button has been clicked!");
+    }
+}
+</code></pre>
+</div>
+
+<!-- Using Not gate -->
+Note that we can combine AND gates and NOT gates to make more interesting logic. For example, this code:
+
+<pre><code>
+if()
+</code></pre>
 
 [Previous](https://ms-hackman.github.io/AndOrNotes/)
 [Next](./OR.html)
