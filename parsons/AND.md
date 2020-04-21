@@ -98,9 +98,9 @@ function mousePressed(){
 </code></pre>
 
 ## Example
-<img src="../assets/exercise_button.jpg">
-Write the <code>function mousePressed()</code> so that when the user clicks on each of these buttons, it will print the colour name to the console. Use the x,y coordinates provided in the image and assume you can use variables <code>buttonW</code> and <code>buttonH</code>. <br>
-If you want to try coding it in the p5js editor, <a href="../assets/buttonExample.txt"here's some code </a> to get you started.
+<img src="../assets/exercise_button.jpg"><br>
+Write <code>function mousePressed()</code> so that when the user clicks on any of these buttons, it will print the colour name for that button to the console. Use the x,y coordinates provided in the image and assume you can use variables <code>buttonW</code> and <code>buttonH</code> for the button's width and height. <br>
+If you want to try coding it in the p5js editor, <a href="../assets/buttonExample.txt">here's some code </a> to get you started.
 
 <button onClick="myFunction('buttons')"> Show Solution </button>
 
@@ -118,7 +118,7 @@ function mousePressed() {
 }
 </code></pre>  
 
-But notice that you have the same code <code> mouseY >= 200 && mouseY <= (200 + buttonH)</code> in all three if statements. You could avoid that redundancy with the following code:
+But notice that you have the same code <code> mouseY >= 200 && mouseY <= (200 + buttonH)</code> in all three if statements. You can avoid that redundancy with the following code:
 <pre><code>
 function mousePressed(){
   if(mouseY >= 200 && mouseY <= (200+buttonH)){
